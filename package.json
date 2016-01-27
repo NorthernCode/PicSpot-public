@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+<<<<<<< HEAD
     "start": "node ./bin/www"
   },
   "dependencies": {
@@ -13,5 +14,14 @@
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
+=======
+    "start": "node ./app.js"
+  },
+  "dependencies": {
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "connect-busboy": "~0.0.2",
+    "fs-extra": "~0.26.5"
+>>>>>>> master
   }
 }
