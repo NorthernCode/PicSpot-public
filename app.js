@@ -21,11 +21,11 @@ app.route('/upload')
             console.log("Uploading: " + filename);
 
             //Path where image will be uploaded
-            filestream = filesystem.createWriteStream(__dirname + '/img/' + filename);
+            filestream = filesystem.createWriteStream(__dirname + '/public/img/' + filename);
             file.pipe(filestream);
             filestream.on('close', function () {    
                 console.log("Upload Finished of " + filename);              
-                res.redirect('back');           //where to go next
+                res.redirect('./img/' + filename);           //where to go next
             });
         });
 });
