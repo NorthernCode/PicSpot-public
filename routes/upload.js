@@ -21,7 +21,7 @@ router.post('/', function (req, res, next) {
                 file.pipe(filestream);
                 filestream.on('close', function () {    
                     console.log("Upload Finished of " + filename);              
-                    res.redirect('../image/' + filename);           //where to go next
+                    res.redirect('../i/' + filename);           //where to go next
                 });
             }else{
                 res.render('index', { title: 'PicSpot' });

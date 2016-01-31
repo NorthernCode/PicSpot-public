@@ -1,4 +1,10 @@
 extends layout
 
 block content
-    img(src= imgUrl )
+    #image
+        img(src= imgUrl )
+    #comments
+        #comment-box
+            include comment.jade
+        #comment-list
+            include comment-list.jade
