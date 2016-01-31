@@ -1,6 +1,7 @@
 block comment
     h1= Comment
-    form(method='post' action='comment')
-        input(type='text' name='name')
-        input(type='text' name='comment')
+    form(method='post' action= img)
+        input(type='hidden' name='url' value= img)
+        input(type='text' name='name' placeholder='You are...')
+        input(type='textarea' name='comment' placeholder='You wana say...')
         input(type='submit')
