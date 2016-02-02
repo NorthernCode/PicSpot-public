@@ -1,6 +1,6 @@
 var express = require('express');
 var mysql = require('mysql');
-var database = require('./bin/db');
+var database = require('../bin/db');
 var router = express.Router();
 
 /* GET home page. */
