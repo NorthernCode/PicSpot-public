@@ -6,8 +6,7 @@ var db = require('../bin/db');
 
 /* GET home page. */
 router.get('/:img', function(req, res, next) {
-    var path = require('path'); 
-    console.log(path.basename());
+    var path = require('path');
     path.exists('./public/images/' + req.params.img, function(exists) { 
       if (exists) { 
         db.query('SELECT name, comment FROM picspot_comments WHERE url="' + req.params.img + '";', function(err, result) {
