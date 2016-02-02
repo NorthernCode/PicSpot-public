@@ -1,8 +1,7 @@
 var express = require('express');
 var mysql = require('mysql');
-var router = express.Router();
-
 var db = require('../bin/db');
+var router = express.Router();
 
 /* GET home page. */
 router.get('/:img', function(req, res, next) {
