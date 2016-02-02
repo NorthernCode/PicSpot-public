@@ -5,7 +5,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/:img', function(req, res, next) {
-    var path = require('path');
+    var path = require('fs');
     path.exists('./public/images/' + req.params.img, function(exists) { 
       if (exists) { 
         database.query('SELECT name, comment FROM picspot_comments WHERE url="' + req.params.img + '";', function(err, result) {
