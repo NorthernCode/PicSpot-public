@@ -35,14 +35,9 @@ input#fileUpload {
     animation-timing-function: linear;
 }
 
-@-webkit-keyframes logo {
-    from {top: 0vh;}
-    to {top: 25vh;}
-}
-
 @keyframes logo {
-    from {top: 0vh;}
-    to {top: 25vh;}
+    from {top: 0vh; opacity: 1.0;}
+    to {top: 25vh; opacity: -0.1;}
 }
 
 #image img{
