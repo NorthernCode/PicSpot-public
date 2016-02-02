@@ -1,3 +1,3 @@
 # PicSpot
 
-Image upload service. Soon online...
+Image upload service. Online at: http://picspot.azurewebsites.net/
