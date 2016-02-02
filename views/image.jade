@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    input(type='text' id='copyUrl')
+    button(id='copyBtn').
+        Copy
+    #image
+        img(src= imgUrl )
+    #comments
+        #comment-box
+            include comment.jade
+        #comment-list
+            include comment-list.jade

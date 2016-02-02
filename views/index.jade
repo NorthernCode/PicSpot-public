@@ -2,6 +2,10 @@ extends layout
 
 block content
     h1= title
-    form(method='post' action='upload' enctype="multipart/form-data")
-        input(type='file' name='fileUploaded')
-        input(type='submit')
+    form(method='post' action='upload' id='uploadForm' enctype="multipart/form-data")
+        input(type='file' name='fileUploaded' id='fileUpload')
+    #logo
+    h2(id='guide').
+        Drag & Drop or Click to upload images.
+    h4.
+        Formats: .jpg .png .gif and .bmp 
